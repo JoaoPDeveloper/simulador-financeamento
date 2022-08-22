@@ -5,52 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Financiamento</title>
-    <style>
-        body{
-            background: rgba(4,4,45);
-            color: white;
-            font: 11pt Tahoma;
-        }
-        tr:nth-child(even){
-            background-color: gray;
-        }
-        table,th,td{
-            border: 1px solid white;
-            border-collapse: collapse;
-            padding: 15px;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Work+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <a href="https://www.linkedin.com/in/joao-dev-starter/"></a>
+
 </head>
 <body>
-    <h2>
-        Simulador de Financiamento com Sistema de Amortização Constate ( SAC )
-    </h2>
-    <input id="textoValor" type="text" placeholder="Valor"><br>
-    <input id="textoEntrada" type="text" placeholder="Valor de Entrada"><br>
-    <input id="textoTaxaJuros" type="text" placeholder="Taxa Juros(%)"><br>
-    <input id="textoPrazo" type="text" placeholder="Prazo ( em Meses ) "><br>
+    <h2>Simulador de Financiamento com Sistema de Amortização Constante (SAC)</h2>
+    <input id="textoValor" required="required" minlength="3" type="number" placeholder="Valor do Financiamento : "><br><br>
+    <input id="textoEntrada" required="required" type="number" placeholder="Valor de Entrada : "><br><br>
+    <input id="textoTaxaJuros" required="required" type="number" placeholder="Valor de Juros (%) : "><br><br>
+    <input id="textoPrazo" required="required" type="number" placeholder="Prazo em meses : "><br><br>
     <button id="botaoCalcular">Calcular</button>
-    <input id="comCarencia" type="checkbox">Com Carência?
+    <input id="comCarencia" class="botao" type="checkbox"> Com carência?
     <select id="listaSuspensa" hidden>
-        <option value="2">2 meses</option>
-        <option value="3">3 meses</option>
-        <option value="4">4 meses</option>
+        <option id="option" value="2">2 meses</option>
+        <option id="option" value="3">3 meses</option>
+        <option id="option" value="4">4 meses</option>
     </select>
     <p></p>
-    <table>
+    <table class="table table table-striped table-hover table-bordered table-responsive">
         <thead>
             <tr>
-                <th>No.</th>
-                <th>Valor da Parcela.</th>
-                <th>Amortização.</th>
-                <th>Juros.</th>
-                <th>Saldo Devedor.</th>
+                <th>Numero</th>
+                <th>Valor da Parcela</th>
+                <th>Amortização</th>
+                <th>Juros</th>
+                <th>Saldo Devedor</th>
             </tr>
         </thead>
         <tbody id="corpoTabela">
-
         </tbody>
     </table>
-    <script type="module" src="/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="module" src="index.js"></script>
+    <footer id="rodape">
+        <h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/joao-dev-starter/" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/joaoPdeveloper" target="_blank"> GitHub </a></li>
+                <li><a href="mailto:joao_entreprise@hotmail.com">Contato</a></li>
+            </ul>
+        </h3>
+    </footer>
 </body>
 </html>
