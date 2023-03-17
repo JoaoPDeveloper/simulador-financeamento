@@ -1,5 +1,5 @@
     *,body{
-        background-color: #ffffff;
+        --bs-body-color: blue;
         color: rgb(0, 0, 0);
         text-align: center;
         padding: 0;
@@ -29,26 +29,25 @@
         padding-top: 0px;
         text-align: center;
         min-width: 25%;
-    }
-    input::placeholder{
-        color: rgb(0, 0, 0);
+        font-size: 42px;
+        margin-top: 20px;
+        margin-bottom: 60px;    
     }
     input{
-        color: #4b0e76;
         text-align: center;
         padding: 5px;
         box-sizing: 20px;
         border-radius: 8px;
-        box-shadow: -5px 5px 5px 5px;
     }
     tr,th{
         min-width: 25%
     }
     .botao{
         display: inline-block;
-        background-color: #ffffff;
         color: #ffffff;
         transition: all .3s linear;
+        margin-left: 20px;
+        margin-top: 20px;
         width: 50px;
         height: 20px;
         display: inline;
@@ -83,32 +82,11 @@
                 0 0 10px #fb6d00,
                 0 0 10px #fb6d00;
    }
-    #botaoCalcular{
-    position: relative;
-    display: inline-block;
-    padding: 10px 6px;
-    color: #ffffff;
-    background-color: #0959a3;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform:uppercase;
-    overflow: hidden;
-    border-radius: 9%;
-    transition: all .3s linear;
-    margin-top: 10px;
-    letter-spacing: 2px;
-    font-style: inherit;
-    }
-
-   #botaoCalcular:hover{
-    background: #01a65f;
-        color: rgb(255, 255, 255);
-        border-radius: 8px;
-        box-shadow: 0 0 10px #01a65f,
-                    0 0 10px #01a65f,
-                    0 0 10px #01a65f,
-                    0 0 10px #01a65f;
-   }
+footer{
+    width: 100;
+    margin: 0 auto;
+    justify-content:space-around;
+}
 
 #outlook,
 #linkedin,
@@ -143,3 +121,21 @@
         padding: 50px;
     }
 }
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) { 
+
+ }
+
+@media (min-width: 992px) { 
+
+ }
+
+@media (min-width: 1200px) { 
+
+ }
+@media (min-width: 1400px) {
+
+ }
