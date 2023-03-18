@@ -12,7 +12,7 @@
   </head>
   <body>
     <h2>Simulador de Financiamento com Sistema de Amortização Constante (SAC)</h2>
-    <input id="textoValor" required minlength="3" type="number" placeholder="Valor do Financiamento:" ><br><br>
+    <input id="textoValor"  required minlength="3" type="number" placeholder="Valor do Financiamento:" ><br><br>
     <input id="textoEntrada" required type="number" placeholder="Valor de Entrada: "><br><br>
     <input id="textoTaxaJuros" required type="number" placeholder="Porcentagem de Juros (%)  "><br><br>
     <input id="textoPrazo" required type="number" placeholder="Prazo em meses:"><br><br>
@@ -29,7 +29,7 @@
         <tr>
           <th>Numero</th>
           <th>Valor da Parcela</th>
-          <th>Amortização</th>
+          <th onmouseover="showMessage()"> Amortização</th>
           <th>Juros</th>
           <th>Saldo Devedor</th>
         </tr>
