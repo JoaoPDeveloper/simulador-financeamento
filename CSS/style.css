@@ -76,12 +76,12 @@
     background: bisque;
    }
 .carde{
-    width: 33%;
+    width: 30%;
     background-color: bisque;
     color: black;
     height: 16rem;
     display: flex;
-    position: sticky;
+    position: relative;
     padding: 2rem 1.5rem;
     border-radius: 1rem;
     transition: box-shadow .3s ease, transform .2s ease;
@@ -162,7 +162,7 @@
     transform: scale(1.2);
    }
    
-@media(max-width: 680px){
+@media only screen and (max-width: 680px){
     a{
         flex-direction: column;
         height: 100%;
@@ -189,32 +189,59 @@
         margin: 0 auto;
         height: auto;
     }
-
 }
-@media(min-height: 420px){
+@media only screen and (max-width: 1300px){
+    .carde{
+        width: 80%;
+        height: 100%;
+    }
+    .card-social__item{
+        flex-direction: column;
+    }
+    input{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 500px){
     footer,a{
         flex-direction: column;
         height: 100%;
         width: 100%;
         padding: 50px;
     }  
+    input{
+        width: 70%;
+    }
+    #botaoCalcular{
+        margin: 0 auto;
+    }
+    .card-social {
+    flex-direction: row;
+    height: 100px;
+    margin-top: 0px;
+    top: 65px;
+    left: 30px;
+    position: relative;
+    }
+    .carde{
+        height: 100%;
+        width: 100%;
+
+    }
+    .card-title{
+        font-size: 24px;
+        width: 222%;
+    }
+    .card-subtitle{
+        font-size: 16px;
+        margin-top: 40px;
+        width: 300%;
+    }
+    .card-social__item {
+        list-style: none;
+        margin: -55px;
+    }
+    #portifolio{
+        left: 0;
+    }
 }
-
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 768px) { 
-
- }
-
-@media (min-width: 992px) { 
-
- }
-
-@media (min-width: 1200px) { 
-
- }
-@media (min-width: 1400px) {
-
- }
