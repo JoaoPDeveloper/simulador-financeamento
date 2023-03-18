@@ -1,31 +1,29 @@
     *,body{
-        --bs-body-color: blue;
-        color: rgb(0, 0, 0);
+        --bs-body-color: rgb(255, 255, 255);
+        color: rgb(0, 200, 255);
         text-align: center;
         padding: 0;
         margin: 0;
         font-family: 'Roboto', sans-serif;
         scroll-behavior: smooth;
     }
-    footer, a{
-        background-color: rgb(34, 0, 255);
-        text-decoration: none;
+    body{
+        background-color: rgb(25, 3, 49);
         color: white;
-        font-size: 26px;
-        width: 100%;
-        height: 150px;
-        text-align: center;
-        padding: 25px 25px 25px;
-        padding-left: 25px 25px 25px;
     }
-    footer{
-        line-height: 110px;
-        text-decoration: none;
-        text-align: center;
+    #portifolio{
+    margin-bottom: 20px;
+    margin-top: 200px;
+    top: 80px;
+    left: 90px;
+    z-index: 1;
+    position: relative;
+    background-color: bisque;
+    color: rgb(5, 9, 255);
     }
     h2{
         font-family: 'Roboto Slab', serif;
-        color: #000000;
+        color: #ffffff;
         padding-top: 0px;
         text-align: center;
         min-width: 25%;
@@ -37,10 +35,12 @@
         text-align: center;
         padding: 5px;
         box-sizing: 20px;
-        border-radius: 8px;
+        border-radius: 10px;
+        width: 10%;
     }
     tr,th{
-        min-width: 25%
+        min-width: 25%;
+        color: white;
     }
     .botao{
         display: inline-block;
@@ -52,15 +52,14 @@
         height: 20px;
         display: inline;
     }
-    
    option{
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
     transition: all .5s linear;
    }
    #listaSuspensa{
-    color: #ffffff;
-    background-color: #0959a3;
+    color: black;
+    background-color: white;
     padding: 10px 6px;
     border-radius: 9%;
     border-radius: 9%;
@@ -74,44 +73,123 @@
         margin-left: 15px;
    }
    #listaSuspensa:hover{
-    background: #c74600;
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
-    box-shadow: 0 0 10px #fb6d00,
-                0 0 10px #fb6d00,
-                0 0 10px #fb6d00,
-                0 0 10px #fb6d00;
+    background: bisque;
    }
-footer{
-    width: 100;
+.carde{
+    width: 33%;
+    background-color: bisque;
+    color: black;
+    height: 16rem;
+    display: flex;
+    position: sticky;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    transition: box-shadow .3s ease, transform .2s ease;
     margin: 0 auto;
-    justify-content:space-around;
-}
-
-#outlook,
-#linkedin,
-#github{
-    width: 60px;
-    height: 60px;
-    display: inline;
-    justify-content:space-around;
-    color:#ffffff;
-    display: inline;
-    box-sizing: 25px;
-    background-color:#2200ff;
-}
-#linkedin{
-    color: #ffffff;
-    background-color: #ffffff;
-}
-
+    align-items: center;
+    display: flex;
+    cursor: default;
+   }
+   .card-info {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+   .card-social {
+    display: flex;
+    justify-content: space-around;
+    transition: transform .2s ease, opacity .2s ease;
+   }  
+   .card-social__item {
+    list-style: none;
+  }
+  .card-social__item svg {
+    height: 45px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 60px;
+    margin-left: 50px;
+    fill: #3b0707;
+    cursor: pointer;
+    transition: fill 0.2s ease ,transform 0.2s ease;
+   }
+   /*Text*/
+   .card-title {
+    color: rgb(0, 0, 0);
+    font-size: 1.8em;
+    font-style: bold;
+    font-weight: 700;
+    line-height: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   #botaoCalcular{
+    font-size: 21px;
+    background-color: rgb(5, 32, 5);
+    margin-top: 70px;
+    margin-right: 150px;
+    margin-bottom: 70px;
+    color: white;
+   }
+  #botaoCalcular:hover{
+    background-color: green;
+    color: white;
+    box-shadow: 0px 1px 1px;
+    animation-delay: 0.8s;
+    transition: 0.8s;
+  }
+   .card-subtitle,.card-subtitle-developer {
+    color: #071292b9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+   }
+/*   
+   /*Hover*/
+   .carde:hover {
+    box-shadow: 2px 7px 9px 7px #44035833;
+    transition: 0.5s;
+   }
+   .card-social__item svg:hover {
+    fill: #fbff00;
+    transform: scale(1.1);
+   }
+  
+   .card-avatar-image:hover {
+    transform: scale(1.2);
+   }
+   
 @media(max-width: 680px){
-    footer,a{
+    a{
         flex-direction: column;
         height: 100%;
         width: 100%;
         padding-right: 100px;
     }
+    .card-title{
+        font-size: 36px;
+        text-align: center;
+        margin-top: 20px;
+        width: 180%;
+    }
+    .card-subtitle-developer, .card-subtitle{
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    .carde{
+        flex-direction: column;
+        width: 90%;
+        height: 30%;
+    }
+    .card-social__item svg {
+        width: auto;
+        margin: 0 auto;
+        height: auto;
+    }
+
 }
 @media(min-height: 420px){
     footer,a{
@@ -119,8 +197,9 @@ footer{
         height: 100%;
         width: 100%;
         padding: 50px;
-    }
+    }  
 }
+
 @media (min-width: 576px) {
 
 }
