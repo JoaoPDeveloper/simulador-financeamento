@@ -1,6 +1,6 @@
     *,body{
         --bs-body-color: rgb(255, 255, 255);
-        color: rgb(183, 158, 158);
+        color: rgb(255, 255, 255);
         text-align: center;
         padding: 0;
         margin: 0;
@@ -8,7 +8,7 @@
         scroll-behavior: smooth;
     }
     body{
-        background-color: rgb(25, 3, 49);
+        background-color: #191F26;
         color: white;
     }
     #exampleModalLabel{
@@ -27,9 +27,14 @@
     input{
         text-align: center;
         padding: 5px;
+        color: yellow;
         box-sizing: 20px;
         border-radius: 10px;
         width: 15%;
+        background-color: #37262681;
+    }
+    ::placeholder{
+        color: yellow;
     }
     tr,th,abbr{
         min-width: 25%;
@@ -48,8 +53,8 @@
         text-align: center;
         margin-right: 20px;
         margin-top: 70px;
-      }
-      
+        color: #191F26;
+      } 
       input[type="checkbox"] {
         position: relative;
         top: 8px;
@@ -57,9 +62,9 @@
         height: 25px;
         -webkit-appearance: none;
         outline: none;
+        background-color: #191F26;
         transition: 0.5s;
       }
-      
       input[type="checkbox"]:before {
         content: "";
         position: absolute;
@@ -345,5 +350,15 @@
     }
     #portifolio{
         left: 0;
+    }
+    ::placeholder{
+        color: black;
+    }
+    input{
+        color: black;
+        background-color: bisque;
+    }
+    #botaoCalcular{
+        margin-right: 20px;
     }
 }
