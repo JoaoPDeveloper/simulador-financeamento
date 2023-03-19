@@ -14,6 +14,11 @@
     #exampleModalLabel{
         color: black;
     }
+    p{
+        color: yellow;
+        bottom: 100px;
+        position: relative;
+    }
     h2{
         font-family: 'Roboto Slab', serif;
         color: #ffffff;
@@ -151,7 +156,6 @@
     cursor: pointer;
     transition: fill 0.2s ease ,transform 0.2s ease;
    }
-   /*Text*/
    .card-title {
     color: rgb(255, 255, 255);
     font-size: 1.8em;
@@ -191,11 +195,6 @@
     background-color: var(--color);
     transition: 1s ease;
    }
-   /* #loading{
-    width:550px;
-    height:400px;
-    margin-left: 600px;
-   } */
    #botaoCalcular::before {
     top: -1em;
     left: -1em;
@@ -368,6 +367,35 @@
     img{
         width: 500px;
         height: 400px;
-        margin-left: -90px;
+        margin-left: -60px;
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+    p{
+        position: relative;
+        margin-left: 100px;
+        font-style: italic;
+        bottom: 100px;
+        color: yellow;
+    }
+
+    @media only screen and (min-width: 420px){
+        p{
+            position: relative;
+            margin-left: 10px;
+            font-style: italic;
+            bottom: 100px;
+            color: yellow;
+        } 
+    }
+    @media only screen and (min-width: 365px){
+        p{
+            position: relative;
+            margin-left: 60px;
+            font-style: italic;
+            bottom: 100px;
+            color: yellow;
+        } 
     }
 }
