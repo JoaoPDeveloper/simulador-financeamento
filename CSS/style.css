@@ -383,7 +383,7 @@
     @media only screen and (min-width: 420px){
         p{
             position: relative;
-            margin-left: 10px;
+            margin-left: 1000px;
             font-style: italic;
             bottom: 100px;
             color: yellow;
@@ -392,7 +392,7 @@
     @media only screen and (min-width: 365px){
         p{
             position: relative;
-            margin-left: 60px;
+            margin: 0 auto;
             font-style: italic;
             bottom: 100px;
             color: yellow;
