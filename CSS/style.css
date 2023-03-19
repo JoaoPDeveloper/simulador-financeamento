@@ -191,7 +191,11 @@
     background-color: var(--color);
     transition: 1s ease;
    }
-   
+   /* #loading{
+    width:550px;
+    height:400px;
+    margin-left: 600px;
+   } */
    #botaoCalcular::before {
     top: -1em;
     left: -1em;
@@ -360,5 +364,10 @@
     }
     #botaoCalcular{
         margin-right: 20px;
+    }
+    img{
+        width: 500px;
+        height: 400px;
+        margin-left: -90px;
     }
 }
