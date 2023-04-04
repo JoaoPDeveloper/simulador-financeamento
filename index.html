@@ -11,7 +11,7 @@
     <title>Simulador de Financiamento</title>
   </head>
   <body>
-    <div id="loading" style="display: block" id="loading">
+    <div id="carregando" style="display: block" id="carregando">
       <img src="https://gifs.eco.br/wp-content/uploads/2021/08/imagens-e-gifs-de-loading-1.gif" style="width:550px;height:400px;" />
       <p>Aguarde...</p>
     </div>
@@ -21,14 +21,16 @@
     <input id="textoEntrada" required type="number" placeholder="Valor de Entrada: "><br><br>
     <input id="textoTaxaJuros" required type="number" placeholder="Porcentagem de Juros (%)  "><br><br>
     <input id="textoPrazo" required type="number" placeholder="Prazo em meses:"><br><br>
-    <button type="submit" class="btn btn-outline-success" id="botaoCalcular" >Simular!</button>
+    <button type="submit" class="btn btn-outline-success"  id="botaoCalcular" >Simular!</button>
     <input id="comCarencia" class="botao" type="checkbox"> Com carência?
     <select class="custom-select" id="listaSuspensa" hidden>
       <option id="option" value="2">2 meses</option>
       <option id="option" value="3">3 meses</option>
       <option id="option" value="4">4 meses</option>
     </select>
-    <p></p>
+    <!-- <button id="my-button">Clique aqui</button> -->
+    <span class="spinner"></span>
+    
     <table class="table table table-striped table-hover table-bordered table-responsive  id="tabela">
       <thead>
         <tr>
@@ -88,14 +90,11 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script type="module" src="/javascript/index.js"></script>
-<script>var i = setInterval(function () {
-    
+<script src="/javascript/loading.js"></script>
+<script>var i = setInterval(function () { 
   clearInterval(i);
-
-  // O código desejado é apenas isto:
-  document.getElementById("loading").style.display = "none";
+  document.getElementById("carregando").style.display = "none";
   document.getElementById("conteudo").style.display = "inline";
-
 }, 4000);
 </script>
    </div>
